@@ -7,7 +7,7 @@ HOW TO INSTALL:
 
 3. Add the "Advanced launch options" through steam.
    To find TF2's advanced launch options:
-         Find TF2 in your steam library
+   - Find TF2 in your steam library
          Right click on the game, and then click on "Properties"
          Under the "General" tab, you will see a "Set Launch Options" area
          Paste in the line of launch options seen below into that area, and then click OK
