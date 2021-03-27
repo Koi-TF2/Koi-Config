@@ -1,5 +1,5 @@
 HOW TO INSTALL:
-1. Copy the "koi_cfg" folder and the "autoexec.cfg" file into TF2's default "cfg" folder. 
+1. Copy both the "koi_cfg" folder and the "autoexec.cfg" file into TF2's default "cfg" folder. 
    (Default location for the cfg folder is "C:\Steam\steamapps\common\Team Fortress 2\tf\cfg")
 
 2. Copy the "koi_custom" folder into TF2's default "custom" folder. 
