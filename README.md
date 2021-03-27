@@ -5,7 +5,7 @@ HOW TO INSTALL:
 2. Copy the "koi_custom" folder into TF2's default "custom" folder. 
    (Default location for the custom folder is "C:\Steam\steamapps\common\Team Fortress 2\tf\custom)
 
-3. Add the "Advanced launch options" through steam. To find TF2's advanced launch options:
+3. Add the "Advanced launch options" through steam. To do this:
    - Find TF2 in your steam library
    - Right click on the game, and then click on "Properties"
    - Under the "General" tab, you will see a "Set Launch Options" area
