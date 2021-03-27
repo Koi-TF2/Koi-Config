@@ -10,5 +10,5 @@ HOW TO INSTALL:
    - Right click on the game, and then click on "Properties"
    - Under the "General" tab, you will see a "Set Launch Options" area
    - Paste in the line of launch options seen below into that area, and then click OK
-   - 
+
   Advanced launch options (copy+paste): -dxlevel 90 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
