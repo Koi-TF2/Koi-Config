@@ -15,4 +15,4 @@ HOW TO INSTALL:
 
   Advanced launch options (copy+paste):
   
-  -dxlevel 90 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
+  -high -dxlevel 81 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
