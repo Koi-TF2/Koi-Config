@@ -11,4 +11,6 @@ HOW TO INSTALL:
    - Under the "General" tab, you will see a "Set Launch Options" area
    - Paste in the line of launch options seen below into that area, and then click OK
 
-  Advanced launch options (copy+paste): -dxlevel 90 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
+  Advanced launch options (copy+paste):
+  
+  -dxlevel 90 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
