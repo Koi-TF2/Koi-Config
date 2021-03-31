@@ -1,3 +1,5 @@
+Download: https://github.com/Koi-Code-TF2/Koi-Config/archive/refs/heads/main.zip
+
 HOW TO INSTALL:
 1. Copy both the "koi_cfg" folder and the "autoexec.cfg" file into TF2's default "cfg" folder. 
 
