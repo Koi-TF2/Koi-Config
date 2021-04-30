@@ -17,6 +17,6 @@ HOW TO INSTALL:
 
   Advanced launch options (copy+paste):
   
-  -high -dxlevel 95 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
+  -dxlevel 95 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
 
 4. RECOMMENDED/OPTIONAL: Install Broesel Hud and ignore/replace the "koi_custom/resource/ui/..." items. If you do this step, use the custom "mainmenuoverride.res" found in the same primary directery as this README and not the one found in the koi_custom.
