@@ -19,4 +19,4 @@ HOW TO INSTALL:
   
   -dxlevel 95 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
 
-4. RECOMMENDED/OPTIONAL: Install Broesel Hud and ignore/replace the "koi_custom/resource/ui/..." items. If you do this step, use the custom "mainmenuoverride.res" found in the same primary directery as this README and not the one found in the koi_custom.
+4. OPTIONAL: Install Broesel Hud and ignore/replace the "koi_custom/resource/ui/..." items. If you do this step, use the custom "mainmenuoverride.res" found in the same primary directery as this README and not the one found in the koi_custom.
