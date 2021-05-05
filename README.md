@@ -19,6 +19,8 @@ HOW TO INSTALL:
   
   -dxlevel 95 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
 
+_____________
+
 4. RECOMMENDED/OPTIONAL: Install Broesel Hud & the customizations. To do this:
    - Prerequisites: 1) have the “koi_custom” installed. 2) Download Broesel Hud from an official hud source website, it is not included in this repo. 
    - After both above prerequisites are complete: drag the Broesel Hud “resource” and “scripts” folders into the koi_custom folder (not the customization files from this repo - that step comes next). When prompted, choose to replace the existing files that have the same names so that the Broesel Hud files overwrite the existing ones.
