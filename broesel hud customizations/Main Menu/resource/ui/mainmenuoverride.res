@@ -371,10 +371,10 @@
 		}		
 	}
 	
-	"ConsoleButton"
+	"GeneralStoreButton"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"ConsoleButton"
+		"fieldname"		"GeneralStoreButton"
 		"xpos"			"c-300"
 		"ypos"			"210"
 		"zpos"			"15"
@@ -432,16 +432,18 @@
 		}		
 	}
 	
-	"GeneralStoreButton"
+	"ConsoleButton"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"GeneralStoreButton"
+		"fieldname"		"ConsoleButton"		
 		"xpos"			"c-300"
 		"ypos"			"232"
 		"zpos"			"15"
 		"wide"			"204"
 		"tall"			"22"
 		"visible"		"1"
+		
+		
 		
 		"SubButton"
 		{
