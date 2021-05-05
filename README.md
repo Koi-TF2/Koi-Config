@@ -19,4 +19,7 @@ HOW TO INSTALL:
   
   -dxlevel 95 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
 
-4. OPTIONAL: Install Broesel Hud and ignore/replace the "koi_custom/resource/ui/..." items. If you do this step, use the custom "mainmenuoverride.res" found in the same primary directery as this README and not the one found in the koi_custom.
+4. RECOMMENDED: Install Broesel Hud & the customizations. To do this:
+   - Prerequisites: 1) have the “koi_custom” installed. 2) Download Broesel Hud from an official hud source website, it is not included in this repo. 
+   - After both above prerequisites are complete: drag the Broesel Hud “resource” and “scripts” folders into the koi_custom folder. When prompted, choose to replace the existing files that have the same names so that the Broesel Hud files overwrite the existing ones.
+   - Install the custom Broesel Hud Customizations. These customizations are included in this repo in the “broesel hud customizations” folder. There are three total customizations. For each of the three, drag the “scripts”, “materials”, “resource” folders into the koi_custom folder and similarly to the above step choose to replace the existing files so that the customization files overwrite the existing ones.
