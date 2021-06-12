@@ -1,7 +1,7 @@
 Download: https://github.com/Koi-Code-TF2/Koi-Config/archive/refs/heads/main.zip
 
 HOW TO INSTALL:
-1. Copy both the "koi_cfg" folder and the "autoexec.cfg" file into TF2's default "cfg" folder. 
+1. Copy the "koi_cfg" folder, the "autoexec.cfg" file, and the "config.cfg" file into TF2's default "cfg" folder. 
 
    (Default location for the cfg folder is "Steam\steamapps\common\Team Fortress 2\tf\cfg")
 
@@ -22,7 +22,7 @@ HOW TO INSTALL:
 _____________
 
 4. RECOMMENDED/OPTIONAL: Install Broesel Hud & the customizations. To do this:
-   - Prerequisites: 1) have the “koi_custom” installed. 2) Download Broesel Hud from an official hud source website, it is not included in this repo. 
-   - After both above prerequisites are complete: drag the Broesel Hud “resource” and “scripts” folders into the koi_custom folder (not the customization files from this repo - that step comes next). When prompted, choose to replace the existing files that have the same names so that the Broesel Hud files overwrite the existing ones.
-   - Install the custom Broesel Hud Customizations. These customizations are included in this repo in the “broesel hud customizations” folder. There are three total customizations. For each of the three, drag the “scripts”, “materials”, “resource” folders into the koi_custom folder and similarly to the above step choose to replace the existing files so that the customization files overwrite the existing ones.
+   - Prerequisites: 1) have “koi_custom” installed. 2) Download Broesel Hud from an official hud source website, it is not included in this repo. 
+   - After both above prerequisites are complete: from the separate Broesel Hud download that is not found in this repo, you will need the “resource” and “scripts” folders. Drag both into the koi_custom folder. When prompted, choose to replace the existing files that have the same names so that the Broesel Hud files overwrite the existing ones.
+   - Once Broesel Hud is installed, install the Broesel Hud customizations found within this repo in the “broesel hud customizations” folder. There are three total customizations. For each of the three, drag the cooresponding “scripts”, “materials”, and “resource” folders into the "koi_custom" folder. Similarly to the previous step, choose to replace the existing files so that the customization files overwrite the existing ones.
    - Set "tf_hud_target_id_disable_floating_health 1". This value should be set to 1 for best results when using Broesel Hud. This value can be found in "koi_cfg/hud+ui.cfg" at the top of the file.
