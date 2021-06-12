@@ -21,8 +21,12 @@ HOW TO INSTALL:
 
 _____________
 
-4. RECOMMENDED/OPTIONAL: Install Broesel Hud & the customizations. To do this:
+4. RECOMMENDED: Install Broesel Hud & the Broesel Hud customizations. To do this:
    - Prerequisites: 1) have “koi_custom” installed. 2) Download Broesel Hud from an official hud source website, it is not included in this repo. 
    - After both above prerequisites are complete: from the separate Broesel Hud download that is not found in this repo, you will need the “resource” and “scripts” folders. Drag both into the "koi_custom" folder. When prompted, choose to replace the existing files that have the same names so that the Broesel Hud files overwrite the existing ones.
    - Once Broesel Hud is installed, install the Broesel Hud customizations found within this repo in the “broesel hud customizations” folder. There are three total customizations. For each of the three, drag the cooresponding “scripts”, “materials”, and “resource” folders into the "koi_custom" folder. Similarly to the previous step, choose to replace the existing files so that the customization files overwrite the existing ones.
    - Set "tf_hud_target_id_disable_floating_health 1". This value should be set to 1 for best results when using Broesel Hud. This value can be found in "koi_cfg/hud+ui.cfg" at the top of the file.
+
+_____________
+
+5. RECOMMENDED: After installing the entire config, load up TF2 for the first time and then close the game. Doing so will fully populate the rest of config.cfg. After config.cfg has been populated, change the file to be Read-Only. This will prevent demo files (.dem) sent from other players who are using their own custom configs from changing your game's settings/config. Demo files will load custom config settings into config.cfg, so by having config.cfg marked as Read-Only the game will be unable to do this.
