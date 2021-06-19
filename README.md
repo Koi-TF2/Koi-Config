@@ -1,6 +1,6 @@
-Download: https://github.com/Koi-Code-TF2/Koi-Config/archive/refs/heads/main.zip
+### Download: https://github.com/Koi-Code-TF2/Koi-Config/archive/refs/heads/main.zip
 
-Current version: 4.5 (June 19th, 2021)
+##### Current version: 4.5 (June 19th, 2021)
 
 HOW TO INSTALL:
 1. Copy the "koi_cfg" folder, the "autoexec.cfg" file, and the "config.cfg" file into TF2's default "cfg" folder. 
