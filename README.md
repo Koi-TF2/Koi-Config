@@ -30,3 +30,7 @@ _____________
 _____________
 
 5. RECOMMENDED: After installing the entire config, load up TF2 for the first time and then close the game. Doing so will fully populate the rest of config.cfg. After config.cfg has been populated, change the file to be Read-Only. This will prevent demo files (.dem) sent from other players who are using their own custom configs from changing your game's settings/config. Demo files will load custom config settings into config.cfg, so by having config.cfg marked as Read-Only the game will be unable to do this.
+
+_____________
+
+6. Optional: Using the custom sprays found within the "sprays" folder. These can be installed by placing any of the "logos" folders (1 for each spray) directly into "Steam\steamapps\common\Team Fortress 2\tf\materials\vgui" and NOT into the "koi_custom" folder's material section (sprays are not meant to be placed into the custom folder). Please note that within the "sprays.cfg" file in "koi_cfg", the variable cl_logofile "materials/vgui/logos/spray.vtf" has been pre-set. What this means is only 1 spray named "spray.vtf" can be used at a time. Using multiple sprays and changing between them is not advised since the names will vary.
