@@ -1,6 +1,6 @@
 ### Download: https://github.com/Koi-Code-TF2/Koi-Config/archive/refs/heads/main.zip
 
-#### Current version: 4.5 (June 19th, 2021)
+#### Current version: 5.0 (June 19th, 2021)
 
 _____________
 
