@@ -31,7 +31,7 @@ _____________
    - Once Broesel Hud is installed, install the Broesel Hud customizations found within this repo in the “broesel hud customizations” folder. There are three total customizations. For each of the three, drag the cooresponding “scripts”, “materials”, and “resource” folders into the "koi_custom" folder. Similarly to the previous step, choose to replace the existing files so that the customization files overwrite the existing ones.
    - Set "tf_hud_target_id_disable_floating_health 1". This value should be set to 1 for best results when using Broesel Hud. This value can be found in "koi_cfg/hud+ui.cfg" at the top of the file.
 
-5. HIGHLY RECOMMENDED: When viewing other player's demo files (.dem), make sure your "config.cfg" file is set to Read-Only. Doing so will prevent the other player's settings from being placed into your own game files which will change settings you don't want changed. This will not impact viewing your own demos since nothing is being changed in the first place.
+5. HIGHLY RECOMMENDED: When viewing other player's demo files (.dem), make sure your "config.cfg" file is set to Read-Only. Doing so will prevent the other player's custom settings from being placed into your own game files, potentially overwriting config settings. This will not impact viewing your own demos since they only utilize your own settings.
 
 _____________
 
