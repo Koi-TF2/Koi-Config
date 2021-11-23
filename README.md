@@ -27,7 +27,7 @@ _____________
 
 4. HIGHLY RECOMMENDED: Install Broesel Hud & the Broesel Hud customizations. To do this:
    - Prerequisites: 1) have “koi_custom” installed. 2) Open the Broesel Hud zip archive found in this repo (or alternatively download Broesel Hud from an official hud source website i.e. https://huds.tf/site/s-Broesel-Hud).
-   - After both above prerequisites are complete: from the separate Broesel Hud download that is not found in this repo, you will need the “resource” and “scripts” folders. Drag both into the "koi_custom" folder. When prompted, choose to replace the existing files that have the same names so that the Broesel Hud files overwrite the existing ones.
+   - After both above prerequisites are complete: from the main Broesel Hud files, you will need the “resource” and “scripts” folders. Drag both into the "koi_custom" folder. When prompted, choose to replace the existing files that have the same names so that the Broesel Hud files overwrite the existing ones.
    - Once Broesel Hud is installed, install the Broesel Hud customizations found within this repo in the “broesel hud customizations” folder. There are three total customizations. For each of the three, drag the cooresponding “scripts”, “materials”, and “resource” folders into the "koi_custom" folder. Similarly to the previous step, choose to replace the existing files so that the customization files overwrite the existing ones.
    - Set "tf_hud_target_id_disable_floating_health 1". This value should be set to 1 for best results when using Broesel Hud. This value can be found in "koi_cfg/hud+ui.cfg" at the top of the file.
 
