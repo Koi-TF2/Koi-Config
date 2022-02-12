@@ -21,7 +21,7 @@ _____________
 
   Advanced launch options (copy+paste):
   
-  -dxlevel 95 -fullscreen -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
+  -dxlevel 95 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd
 
 _____________
 
