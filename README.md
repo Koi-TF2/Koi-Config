@@ -20,7 +20,6 @@ _____________
    - Paste in the line of launch options seen below into that area, and then click OK
 
   Advanced launch options (copy+paste): 
-  
   `-dxlevel 95 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd`
   
 
