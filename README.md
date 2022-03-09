@@ -5,9 +5,9 @@
 _____________
 
 ##### HOW TO INSTALL:
-1. Copy the "koi_cfg" folder, "autoexec.cfg" file, and "config.cfg" file into TF2's default "cfg" folder. (Location for the default cfg folder is "Steam\steamapps\common\Team Fortress 2\tf\cfg")
+1. Copy the "koi_cfg" folder, "autoexec.cfg" file, and "config.cfg" file into TF2's default "cfg" folder. (Location for the default cfg folder is `Steam\steamapps\common\Team Fortress 2\tf\cfg`)
 
-2. Copy the "koi_custom" folder into TF2's default "custom" folder. (Location for the default custom folder is "Steam\steamapps\common\Team Fortress 2\tf\custom")
+2. Copy the "koi_custom" folder into TF2's default "custom" folder. (Location for the default custom folder is `Steam\steamapps\common\Team Fortress 2\tf\custom`)
 
 3. Add the "Advanced launch options" through steam. To do this:
    - Find TF2 in your steam library
