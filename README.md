@@ -1,4 +1,4 @@
-### Download: https://github.com/Koi-TF2/Koi-Config/archive/refs/heads/main.zip
+### Download: https://github.com/Koi-TF2/Koi-Config/archive/refs/heads/Release.zip
 
 #### Current version: 5.8 (March 11th, 2022)
 
