@@ -1,6 +1,5 @@
 "viewed.res"
 {
-
 	"arena_badlands"
 	{
 		"viewed"		"50"
@@ -14,6 +13,10 @@
 		"viewed"		"50"
 	}
 	"arena_lumberyard"
+	{
+		"viewed"		"50"
+	}
+	"arena_lumberyard_event"
 	{
 		"viewed"		"50"
 	}
@@ -45,6 +48,14 @@
 	
 	
 	"cp_5gorge"
+	{
+		"viewed"		"50"
+	}
+	"cp_altitude"
+	{
+		"viewed"		"50"
+	}
+	"cp_ambush_event"
 	{
 		"viewed"		"50"
 	}
@@ -187,6 +198,10 @@
 	{
 		"viewed"		"50"
 	}
+	"ctf_doublecross_snowy"
+	{
+		"viewed"		"50"
+	}
 	"ctf_foundry"
 	{
 		"viewed"		"50"
@@ -204,6 +219,10 @@
 		"viewed"		"50"
 	}
 	"ctf_sawmill"
+	{
+		"viewed"		"50"
+	}
+	"ctf_snowfall_final"
 	{
 		"viewed"		"50"
 	}
@@ -241,6 +260,10 @@
 	{
 		"viewed"		"50"
 	}
+	"koth_cascade"
+	{
+		"viewed"		"50"
+	}
 	"koth_harvest_event"
 	{
 		"viewed"		"50"
@@ -269,7 +292,15 @@
 	{
 		"viewed"		"50"
 	}
+	"koth_los_muertos"
+	{
+		"viewed"		"50"
+	}
 	"koth_maple_ridge_event"
+	{
+		"viewed"		"50"
+	}
+	"koth_megalo"
 	{
 		"viewed"		"50"
 	}
@@ -293,7 +324,19 @@
 	{
 		"viewed"		"50"
 	}
+	"koth_slaughter_event"
+	{
+		"viewed"		"50"
+	}
 	"koth_suijin"
+	{
+		"viewed"		"50"
+	}
+	"koth_synthetic_event"
+	{
+		"viewed"		"50"
+	}
+	"koth_undergrove_event"
 	{
 		"viewed"		"50"
 	}
@@ -362,11 +405,19 @@
 	{
 		"viewed"		"50"
 	}
+	"pd_farmageddon"
+	{
+		"viewed"		"50"
+	}
 	"pd_monster_bash"
 	{
 		"viewed"		"50"
 	}
 	"pd_pit_of_death_event"
+	{
+		"viewed"		"50"
+	}
+	"pd_snowville_event"
 	{
 		"viewed"		"50"
 	}
@@ -385,11 +436,27 @@
 	{
 		"viewed"		"50"
 	}
+	"pl_bloodwater"
+	{
+		"viewed"		"50"
+	}
 	"pl_borneo"
 	{
 		"viewed"		"50"
 	}
+	"pl_breadspace"
+	{
+		"viewed"		"50"
+	}
 	"pl_cactuscanyon"
+	{
+		"viewed"		"50"
+	}
+	"pl_chilly"
+	{
+		"viewed"		"50"
+	}
+	"pl_coal_event"
 	{
 		"viewed"		"50"
 	}
@@ -409,11 +476,23 @@
 	{
 		"viewed"		"50"
 	}
+	"pl_hasslecastle"
+	{
+		"viewed"		"50"
+	}
 	"pl_hoodoo_final"
 	{
 		"viewed"		"50"
 	}
 	"pl_millstone_event"
+	{
+		"viewed"		"50"
+	}
+	"pl_pier"
+	{
+		"viewed"		"50"
+	}
+	"pl_precipice_event_final"
 	{
 		"viewed"		"50"
 	}
@@ -429,11 +508,19 @@
 	{
 		"viewed"		"50"
 	}
+	"pl_terror_event"
+	{
+		"viewed"		"50"
+	}
 	"pl_thundermountain"
 	{
 		"viewed"		"50"
 	}
 	"pl_upward"
+	{
+		"viewed"		"50"
+	}
+	"pl_wutville_event"
 	{
 		"viewed"		"50"
 	}
