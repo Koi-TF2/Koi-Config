@@ -1,0 +1,23 @@
+#imagemagick via linux
+#sudo apt install imagemagick
+#sudo apt install ttf-mscorefonts-installer
+#make sure folders are correct (i.e. "numbers" dir)
+#make sure bg.png is present
+#must be 128x32
+#when creating vtf: normal and alpha both DTX5, keep resize as power of 2 triange none, keep clamp 128, remove generate mipmaps and normal maps, in advanced remove compute reflectivity and generate thumnnail
+
+convert -auto-orient -background "#00000000" -fill "#00ff00" -font Verdana -size 128x32 -gravity center -pointsize 32 label:0 numbers/0.png
+
+count=9999
+for i in $(seq $count)
+do
+  convert -auto-orient -background "#00000000" -fill "#00ff00" -font Verdana -size 128x32 -gravity center -pointsize 32 label:$i numbers/$i.png
+done
+
+countbg=9999
+for j in $(seq $countbg)
+do
+  convert bg.png numbers/$j.png -composite numbers/$j.png
+done
+
+convert bg.png numbers/0.png -composite numbers/0.png
