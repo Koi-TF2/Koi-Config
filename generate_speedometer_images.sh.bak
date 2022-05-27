@@ -4,7 +4,7 @@
 #make sure folders are correct (i.e. "numbers" dir)
 #make sure bg.png is present
 #must be 128x32
-#when creating vtf: normal and alpha both DTX5, keep resize as power of 2 triange none, keep clamp 128, remove generate mipmaps and normal maps, in advanced remove compute reflectivity and generate thumnnail
+#when creating vtf: normal and alpha both DTX5, keep resize as power of 2 triangle none, keep clamp 128, remove generate mipmaps and normal maps, in advanced remove compute reflectivity and generate thumbnail
 
 convert -auto-orient -background "#00000000" -fill "#00ff00" -font Verdana -size 128x32 -gravity center -pointsize 32 label:0 numbers/0.png
 
