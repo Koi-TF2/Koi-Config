@@ -1,0 +1,7 @@
+Full config clean up & reset:
+1) Delete all existing config files (for Koi's Config these are: "tf\custom\koi_custom", "tf\cfg\koi_cfg", "tf\cfg\autexec.cfg", "tf\cfg\config.cfg"). Alternatively, completely uninstall the game and delete the "Team Fortress 2" folder in "Steam\steamapps\common" then reinstall through steam
+2) Verify game files (steam game properties -> local files tab -> "Verify integrity of game files...")
+3) Make all the TF2 cloud save files blank. NOTE: Do not delete the files or else steam cloud will redownload them, just open and delete everything inside + save ("Steam/userdata/<your steam ID3>/440/remote/cfg") 
+4) Launch TF2 with the following advanced launch options once, then remove the options afterward: "-novid -autoconfig -default +host_writeconfig config.cfg full +mat_savechanges +quit" 
+5) Confirm that the TF2 cloud save files are blank. If they are not, open them and delete everything inside + save ("Steam/userdata/<your steam ID3>/440/remote/cfg") 
+6) Lastly make sure TF2 cloud sync is disabled (steam game properties -> general tab -> steam cloud area -> untick "Keep games saves in the Steam Cloud for Team Fortress 2")
