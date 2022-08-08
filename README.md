@@ -14,8 +14,9 @@ _____________
    - Right click on the game, and then click on "Properties"
    - Under the "General" tab, you will see a "Set Launch Options" area
    - Paste in the line of launch options seen below into that area, and then click OK
-  
-  #### Advanced launch options (copy+paste): `-dxlevel 95 -sw -w 1920 -h 1080 -noborder -novid -useforcedmparms -noforcemaccel -noforcemspd`
+
+  #### Fullscreen @ 1080p 240hz (Recommended for best performance): `-dxlevel 95 -full -w 1920 -h 1080 -freq 240 -novid -nojoy -nosteamcontroller -nohltv -noquicktime -precachefontchars -useforcedmparms -noforcemaccel -noforcemspd`
+  #### Windowed Borderless @ 1080p 240hz (Better for multitasking on multiple monitors, better alt+tab): `-dxlevel 95 -sw -w 1920 -h 1080 -freq 240 -novid -nojoy -nosteamcontroller -nohltv -noquicktime -precachefontchars -useforcedmparms -noforcemaccel -noforcemspd`
   
 
 4. **HIGHLY RECOMMENDED - IMPORTANT**: Install Broesel Hud & the Broesel Hud Customizations. To do this:
