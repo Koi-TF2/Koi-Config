@@ -50,7 +50,9 @@ _____________
 
 _____________
 
-5. Optional 1: "Streamer" Mode (Hide usernames) **with Broesel Hud**:
+6. Optional but Recommended: Set an sv_password on the local listen server creation (inside of `listenserver.cfg`). By default, there is no password set. This config sets all necessary configurations to allow local server creation (like with the map command, or with the Create Server button) to use Steam Networking (Steam Datagram Relay) to automatically handle internet traffic. This means any listen server you generate will securely allow outside players to find your game inside of the Internet tab of the Server Browser, since it is assigned a "fake" SDR IP using secure Steam Networking. If you do not want players being able to connect to your listen servers, you should either set sv_password to something nobody can guess, or change the values for sv_lan to 1 in both `koi_cfg\network.cfg` and `listenserver.cfg`. Setting sv_lan 1 will disable internet traffic to the listen server entirely, regardless of Steam Networking. Keeping sv_lan 0 and setting sv_password will let the listen server show in the browser but block incoming connections unless the player knows the password you set to your listen server
+
+5. Optional: "Streamer" Mode (Hide usernames) **with Broesel Hud**:
 - Hide usernames from the killfeed:
   - Inside `scripts\Hudlayout.res`, find `HudDeathNotice` and change: `"TextFont" "surface11"` to `"TextFont" "redacted8"`. Note that this does not hide weird characters or symbols from player names. If you want to completely remove names fully, use `"TextFont" ""` instead
 - Hide usernames from the killcam:
@@ -67,7 +69,7 @@ _____________
   - "no_unusuals.vpk" does not work on valve/pure servers, but could still be useful for streamers. Side node, it does not remove the Pro KS Eye-Effect Particles. This mod is not upkept to the same degree as the primary no_hats_bgum.vpk
   - Because the mods listed at this site get updated with new hats and unusual effects many times per year, I suggest keeping them all in their original .vpk file-form, as opposed to extracting the contents. This makes it easier to constantly upgrade them to their new versions when new cosmetic updates drop. Note that if these are outdated (especially the no_unusuals.vpk) they will not work and can cause issues, and as such it may be worthwhile to temporarily disable/delete these mods by removing the .vpk's from your custom folder until they get updated to work with the new content. no_hats_bgum.vpk is typically kept up-to-date very well, while others such as no_unusuals.vpk may lag behind
 
-6. Optional 2: Using the custom sprays found within the "Sprays" zip. These can be installed by placing any of the "vgui" folders (1 for each spray) directly into `Steam\steamapps\common\Team Fortress 2\tf\materials` and **NOT** into the "koi_custom" folder's material section (sprays are not meant to be placed into the custom folder). Please note that within `koi_cfg\sprays.cfg`, the variable `cl_logofile "materials/vgui/logos/spray.vtf"` has been pre-set. What this means is only 1 spray named "spray.vtf" can be used at a time. Using multiple sprays and changing between them therefore does not work (unless spray file is renamed or config is changed).
+7. Optional: Using the custom sprays found within the "Sprays" zip. These can be installed by placing any of the "vgui" folders (1 for each spray) directly into `Steam\steamapps\common\Team Fortress 2\tf\materials` and **NOT** into the "koi_custom" folder's material section (sprays are not meant to be placed into the custom folder). Please note that within `koi_cfg\sprays.cfg`, the variable `cl_logofile "materials/vgui/logos/spray.vtf"` has been pre-set. What this means is only 1 spray named "spray.vtf" can be used at a time. Using multiple sprays and changing between them therefore does not work (unless spray file is renamed or config is changed).
 
 _____________
 
