@@ -12,12 +12,12 @@ _____________
 
 ### Download: https://github.com/Koi-TF2/Koi-Config/archive/refs/heads/Release.zip
 
-#### Current version: 6.8 (Dec 8th, 2024)
+#### Current version: 6.8.1 (Feb 19th, 2025)
 
 _____________
 
 ##### HOW TO INSTALL:
-1. Copy the "koi_cfg" folder, "autoexec.cfg" file, and "config.cfg" file into TF2's default "cfg" folder. (Location for the default cfg folder is `Steam\steamapps\common\Team Fortress 2\tf\cfg`)
+1. Copy the "koi_cfg" folder, "autoexec.cfg" file, "config.cfg" file, and "listenserver.cfg" into TF2's default "cfg" folder. (Location for the default cfg folder is `Steam\steamapps\common\Team Fortress 2\tf\cfg`)
 
 2. Copy the "koi_custom" folder into TF2's default "custom" folder. (Location for the default custom folder is `Steam\steamapps\common\Team Fortress 2\tf\custom`)
 
