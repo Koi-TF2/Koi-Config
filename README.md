@@ -33,7 +33,7 @@ _____________
 - For 4:3 Stretched support, make the following adjustments:
   - Inside of NVidia Control Panel, locate: `Display -> "Adjust desktop size and position" -> Choose your primary monitor -> "Apply the following settings:" for "Scaling" -> Full-screen`. Depending on the PC being used, you may also need to tick the `"Override the scaling mode set by games and programs"` box in the same section.
   - Recommended but optional: Inside `koi_cfg\mouse+sens.cfg`, change the "m_yaw" cvar from `m_yaw 0.022` to `m_yaw 0.0165`. This ensures that the horizontal sensitivity matches with the vertical sensitivity when display is stretched.
- - #### Windowed Borderless @ 1080p 240hz (Much better alt+tab support): 
+ - #### Windowed Borderless 16:9 @ 1920x1080 240hz (Much better alt+tab support): 
 `-dxlevel 95 -sw -w 1920 -h 1080 -noborder -freq 240 -novid -nojoy -nosteamcontroller -nohltv -noquicktime -precachefontchars -useforcedmparms -noforcemaccel -noforcemspd -no_texture_stream`
   
 
