@@ -55,9 +55,12 @@ _____________
 6. Optional: "Streamer" Mode (Hide usernames) **with Broesel Hud**:
 - Hide usernames from the killfeed:
   - Inside `scripts\Hudlayout.res`, find `HudDeathNotice` and change: `"TextFont" "surface11"` to `"TextFont" "redacted8"`. Note that this does not hide weird characters or symbols from player names. If you want to completely remove names fully, use `"TextFont" ""` instead
-- Hide usernames from the killcam:
+- Hide usernames/weapon from the killcam:
   - Inside `resource\ui\FreezePanel_Basic.res`, find `FreezeLabelKiller` and change: `"labelText" "%killername%"` to `"labelText" ""`
-  - Also inside `resource\ui\FreezePanel_Basic.res`, find `itempanel` and change: `"xpos" "r200"` and `"ypos" "0"` to `"xpos" "9999"` and `"ypos" "9999"` respectively (this prevents the killcam weapon-display panel from showing up, which contains "\<playername\> is carrying:". This also prevents malicious weapon names/descriptions from being displayed on killcam. Note that this DOES NOT disable the item inspect/display panel entirely - you can still inspect and see other player's items in spectate and while waiting for respawn. This ONLY disables being able to see the weapon of the player who killed you within the killcam specifically)
+  - Also inside `resource\ui\FreezePanel_Basic.res`, find `itempanel` and change: `"xpos" "r200"` and `"ypos" "0"` to `"xpos" "9999"` and `"ypos" "9999"` respectively (this prevents the killcam weapon-display itempanel from showing up entirely, so no killcam weapon is shown at all). Note that disabling the killcam itempanel DOES NOT disable the itempanel for both inspecting items manually and inspecting when in the respawn spectate cam (see next bullet for hiding those usernames)
+- Hide "\<playername\> is carrying:" text from both manual inspect and respawn spectate cam (allows the weapon to be viewed, but removes the username carrying field):
+  - For manual inspect: Locate `resource\ui\HudInspectPanel.res`, find `itempanel` -> `ItemLabel` and change: `"ypos" "3"` to `"ypos" "9999"`
+  - For respawn automatic spectate cam inspect: Locate `resource\ui\Spectator.res`, find `itempanel` -> `ItemLabel` and change: `"ypos" "3"` to `"ypos" "9999"`
 - Hide usernames from the scoreboard (tab) and spectator list:
   - Inside `resource\ui\ScoreBoard.res`, go to the very bottom of the file and uncomment the large commented-out section (remove the // characters). Uncommenting this section will add big rectangular blocker bars on top of the player names in your scoreboard
 - Hide \<playername\> is on a killstreak popup notifications:
