@@ -66,6 +66,7 @@ _____________
 - It is recommended to use "commstoggle" with this mode, which toggles on/off both text and voice chat when key pressed. Bound to "\\" (backslash key) by default. Or alternatively open console and type "commstoggle"
 - You can optionally hide player's Casual Rank (the icon) from the Tab Scoreboard. Admittedly this is pretty pointless to do, but if you're looking to hide that metric of skill level, then change the following:
   - Inside `resource\ui\ScoreBoard.res`, find `scores` and change: `"medal_width" "28"` and `"medal_column_width" "21"` to `"medal_width" "0"` and `"medal_column_width" "0"` respectively
+  - Alternatively, you can also hide the ranks by manually adjusting the scoreboard name-blocker bars located at the bottom of the `resource\ui\ScoreBoard.res` file so that they also cover the casual ranks and not just the names of the players
 - I also suggest checking out the No Hats mod found here: https://pevhs.ch/tf2/vpk/nhbgum/
   - "no_hats_bgum.vpk" is the primary mod that removes cosmetics and works on every server including valve/pure servers. Place the .vpk into `Team Fortress 2\tf\custom`
   - "no_unusuals.vpk" does not work on valve/pure servers, but could still be useful for streamers. Side node, it does not remove the Pro KS Eye-Effect Particles. This mod is not upkept to the same degree as the primary no_hats_bgum.vpk
