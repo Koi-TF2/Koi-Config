@@ -67,6 +67,8 @@ _____________
   - Inside `resource\ui\ScoreBoard.res`, go to the very bottom of the file and uncomment the large commented-out section (remove the // characters). Uncommenting this section will add big rectangular blocker bars on top of the player names in your scoreboard
 - Hide "\<playername\> is on a killstreak" popup notifications:
   - Use "cl_hud_killstreak_display_time 0". The cl_hud_killstreak_display_time cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 3 seconds)
+- Hide teammate usernames from the respawn spectate camera xray (the playername above every teammates head through walls during respawn spec cam):
+  - Use "tf_spec_xray_disable 1". The tf_spec_xray_disable cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 0 to allow teammate names)
 - Hide usernames from the end-of-round MVP top score and top killstreak popup:
   - Inside `resource\ui\WinPanel.res`, find all four of the following: `Player1Name` `Player2Name` `Player3Name` `KillStreakPlayer1Name`, and change: `"font" "surface10"` to `"font" "redacted8"` for all four
 - Hide usernames from mouse-over/medic:
