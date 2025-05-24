@@ -52,6 +52,8 @@ _____________
 
 5. Optional but Recommended: Set an sv_password on the local listen server creation (inside of `listenserver.cfg`). By default, there is no password set. This config sets all necessary configurations to allow local server creation (like with the map command, or with the Create Server button) to use Steam Networking (Steam Datagram Relay) to automatically handle internet traffic. This means any listen server you generate will securely allow outside players to find your game inside of the Internet tab of the Server Browser, since it is assigned a "fake" SDR IP using secure Steam Networking. If you do not want players being able to connect to your listen servers, you should either set sv_password to something nobody can guess, or change the values for sv_lan to 1 in both `koi_cfg\network.cfg` and `listenserver.cfg`. Setting sv_lan 1 will disable internet traffic to the listen server entirely, regardless of Steam Networking. Keeping sv_lan 0 and setting sv_password will let the listen server show in the browser but block incoming connections unless the player knows the password you set to your listen server
 
+_____________
+
 6. Optional: "Streamer" Mode (Hide usernames) **with Broesel Hud**:
 - Hide usernames from the killfeed:
   - Inside `scripts\Hudlayout.res`, find `HudDeathNotice` and change: `"TextFont" "surface11"` to `"TextFont" "redacted8"`. Note that this does not hide weird characters or symbols from player names. If you want to completely remove names fully, use `"TextFont" ""` instead
@@ -63,8 +65,10 @@ _____________
   - For respawn automatic spectate cam inspect: Locate `resource\ui\Spectator.res`, find `itempanel` -> `ItemLabel` and change: `"ypos" "3"` to `"ypos" "9999"`
 - Hide usernames from the scoreboard (tab) and spectator list:
   - Inside `resource\ui\ScoreBoard.res`, go to the very bottom of the file and uncomment the large commented-out section (remove the // characters). Uncommenting this section will add big rectangular blocker bars on top of the player names in your scoreboard
-- Hide \<playername\> is on a killstreak popup notifications:
+- Hide "\<playername\> is on a killstreak" popup notifications:
   - Use "cl_hud_killstreak_display_time 0". The cl_hud_killstreak_display_time cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 3 seconds)
+- Hide usernames from the end-of-round MVP top score and top killstreak popup:
+  - Inside `resource\ui\WinPanel.res`, find all four of the following: `Player1Name` `Player2Name` `Player3Name` `KillStreakPlayer1Name`, and change: `"font" "surface10"` to `"font" "redacted8"` for all four
 - Hide usernames from mouse-over/medic:
   - Inside `resource\ui\TargetID.res`, find `TargetNameLabel` and change: `"font" "surface11"` to `"font" "redacted8"`
 - Hide usernames from spy disguising:
@@ -77,6 +81,8 @@ _____________
   - "no_hats_bgum.vpk" is the primary mod that removes cosmetics and works on every server including valve/pure servers. Place the .vpk into `Team Fortress 2\tf\custom`
   - "no_unusuals.vpk" does not work on valve/pure servers, but could still be useful for streamers. Side node, it does not remove the Pro KS Eye-Effect Particles. This mod is not upkept to the same degree as the primary no_hats_bgum.vpk
   - Because the mods listed at this site get updated with new hats and unusual effects many times per year, I suggest keeping them all in their original .vpk file-form, as opposed to extracting the contents. This makes it easier to constantly upgrade them to their new versions when new cosmetic updates drop. Note that if these are outdated (especially the no_unusuals.vpk) they will not work and can cause issues, and as such it may be worthwhile to temporarily disable/delete these mods by removing the .vpk's from your custom folder until they get updated to work with the new content. no_hats_bgum.vpk is typically kept up-to-date very well, while others such as no_unusuals.vpk may lag behind
+
+_____________
 
 7. Optional: Using the custom sprays found within the "Sprays" zip. These can be installed by placing any of the "vgui" folders (1 for each spray) directly into `Steam\steamapps\common\Team Fortress 2\tf\materials` and **NOT** into the "koi_custom" folder's material section (sprays are not meant to be placed into the custom folder). Please note that within `koi_cfg\sprays.cfg`, the variable `cl_logofile "materials/vgui/logos/spray.vtf"` has been pre-set. What this means is only 1 spray named "spray.vtf" can be used at a time. Using multiple sprays and changing between them therefore does not work (unless spray file is renamed or config is changed).
 
