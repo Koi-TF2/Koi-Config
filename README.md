@@ -62,7 +62,9 @@ _____________
   - Inside `resource\ui\ScoreBoard.res`, go to the very bottom of the file and uncomment the large commented-out section (remove the // characters). Uncommenting this section will add big rectangular blocker bars on top of the player names in your scoreboard
 - Hide \<playername\> is on a killstreak popup notifications:
   - Use "cl_hud_killstreak_display_time 0". The cl_hud_killstreak_display_time cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 3 seconds)
-- Note that changing these values does not hide player names from voicechat or from moused-over friendly teammates/medics
+- Hide usernames from mouse-over/medic:
+  - Inside `resource\ui\TargetID.res`, find `TargetNameLabel` and change: `"font" "surface11"` to `"font" "redacted8"`
+- Note that changing the above values does not hide player names from voicechat
 - It is recommended to use "commstoggle" with this mode, which toggles on/off both text and voice chat when key pressed. Bound to "\\" (backslash key) by default. Or alternatively open console and type "commstoggle"
 - You can optionally hide player's Casual Rank (the icon) from the Tab Scoreboard. Admittedly this is pretty pointless to do, but if you're looking to hide that metric of skill level, then change the following:
   - Inside `resource\ui\ScoreBoard.res`, find `scores` and change: `"medal_width" "28"` and `"medal_column_width" "21"` to `"medal_width" "0"` and `"medal_column_width" "0"` respectively
