@@ -58,9 +58,11 @@ _____________
 - Hide usernames from the killcam:
   - Inside `resource\ui\FreezePanel_Basic.res`, find `FreezeLabelKiller` and change: `"labelText" "%killername%"` to `"labelText" ""`
   - Also inside `resource\ui\FreezePanel_Basic.res`, find `itempanel` and change: `"xpos" "r200"` and `"ypos" "0"` to `"xpos" "9999"` and `"ypos" "9999"` respectively (this prevents the killcam weapon-display panel from showing up, which contains "\<playername\> is carrying:". This also prevents malicious weapon names/descriptions from being displayed on killcam. Note that this DOES NOT disable the item inspect/display panel entirely - you can still inspect and see other player's items in spectate and while waiting for respawn. This ONLY disables being able to see the weapon of the player who killed you within the killcam specifically)
+- Hide usernames from the scoreboard (tab) and spectator list:
+  - Inside `resource\ui\ScoreBoard.res`, go to the very bottom of the file and uncomment the large commented-out section (remove the // characters). Uncommenting this section will add big rectangular blocker bars on top of the player names in your scoreboard
 - Hide \<playername\> is on a killstreak popup notifications:
   - Use "cl_hud_killstreak_display_time 0". The cl_hud_killstreak_display_time cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 3 seconds)
-- Changing these values does not hide player names from the scoreboard (tab), from voicechat, or from friendly medics/friendly players when moused-over
+- Note that changing these values does not hide player names from voicechat or from moused-over friendly teammates/medics
 - It is recommended to use "commstoggle" with this mode, which toggles on/off both text and voice chat when key pressed. Bound to "\\" (backslash key) by default. Or alternatively open console and type "commstoggle"
 - You can optionally hide player's Casual Rank (the icon) from the Tab Scoreboard. Admittedly this is pretty pointless to do, but if you're looking to hide that metric of skill level, then change the following:
   - Inside `resource\ui\ScoreBoard.res`, find `scores` and change: `"medal_width" "28"` and `"medal_column_width" "21"` to `"medal_width" "0"` and `"medal_column_width" "0"` respectively
