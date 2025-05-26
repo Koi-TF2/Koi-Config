@@ -71,6 +71,9 @@ _____________
   - Use "tf_spec_xray_disable 1". The tf_spec_xray_disable cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 0 to allow teammate names)
 - Hide usernames from the end-of-round MVP top score and top killstreak popup:
   - Inside `resource\ui\WinPanel.res`, find all four of the following: `Player1Name` `Player2Name` `Player3Name` `KillStreakPlayer1Name`, and change: `"font" "surface10"` to `"font" "redacted8"` for all four
+- Hide usernames from the casual pre-game round start and post-game stats screens:
+  - Pre-game round start screen: Locate `resource\ui\HudMatchStatus.res`, find both `BluePlayerList` and `RedPlayerList`, and change: `"visible" "1"` to `"visible" "0"` for both teams
+  - Post-game stats screen: Locate `resource\ui\HudMatchSummary.res`, find both `BluePlayerList` and `RedPlayerList`, and change: `"avatar_width" "s.08"` and `"name_width" "s.19"` to `"avatar_width" "1"` and `"name_width" "1"` respectively for both teams (unfortunately this will still leave the first character of the username, as this is not removable, although it should not matter since the name will still be unreadable)
 - Hide usernames from mouse-over/medic:
   - Inside `resource\ui\TargetID.res`, find `TargetNameLabel` and change: `"font" "surface11"` to `"font" "redacted8"`
 - Hide usernames from spy disguising:
