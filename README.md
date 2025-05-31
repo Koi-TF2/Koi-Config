@@ -56,7 +56,7 @@ _____________
 
 6. Optional: "Streamer" Mode (Hide usernames) **with Broesel Hud**:
 - Hide usernames from the killfeed:
-  - Inside `scripts\Hudlayout.res`, find `HudDeathNotice` and change: `"TextFont" "surface11"` to `"TextFont" "redacted8"`. Note that this does not hide weird characters or symbols from player names. If you want to completely remove names fully, use `"TextFont" ""` instead
+  - Inside `scripts\Hudlayout.res`, find `HudDeathNotice` and change: `"TextFont" "surface11"` to `"TextFont" "redacted"`. Note that this does not hide weird characters or symbols from player names. If you want to completely remove names fully, use `"TextFont" ""` instead
 - Hide usernames/weapon from the killcam:
   - Inside `resource\ui\FreezePanel_Basic.res`, find `FreezeLabelKiller` and change: `"labelText" "%killername%"` to `"labelText" ""`
   - Also inside `resource\ui\FreezePanel_Basic.res`, find `itempanel` and change: `"xpos" "r200"` and `"ypos" "0"` to `"xpos" "9999"` and `"ypos" "9999"` respectively (this prevents the killcam weapon-display itempanel from showing up entirely, so no killcam weapon is shown at all). Note that disabling the killcam itempanel DOES NOT disable the itempanel for both inspecting items manually and inspecting when in the respawn spectate cam (see next bullet for hiding those usernames)
@@ -70,14 +70,14 @@ _____________
 - Hide teammate usernames from the respawn spectate camera xray (the playername above every teammates head through walls during respawn spec cam):
   - Use "tf_spec_xray_disable 1". The tf_spec_xray_disable cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 0 to allow teammate names)
 - Hide usernames from the end-of-round MVP top score and top killstreak popup:
-  - Inside `resource\ui\WinPanel.res`, find all four of the following: `Player1Name` `Player2Name` `Player3Name` `KillStreakPlayer1Name`, and change: `"font" "surface10"` to `"font" "redacted8"` for all four
+  - Inside `resource\ui\WinPanel.res`, find all four of the following: `Player1Name` `Player2Name` `Player3Name` `KillStreakPlayer1Name`, and change: `"font" "surface10"` to `"font" "redacted"` for all four
 - Hide usernames from the casual pre-game round start and post-game stats screens:
   - Pre-game round start screen: Locate `resource\ui\HudMatchStatus.res`, find both `BluePlayerList` and `RedPlayerList`, and change: `"visible" "1"` to `"visible" "0"` for both teams
   - Post-game stats screen: Locate `resource\ui\HudMatchSummary.res`, find both `BluePlayerList` and `RedPlayerList`, and change: `"avatar_width" "s.08"` and `"name_width" "s.19"` to `"avatar_width" "1"` and `"name_width" "1"` respectively for both teams (unfortunately this will still leave the first character of the username, as this is not removable, although it should not matter since the name will still be unreadable)
 - Hide usernames from mouse-over/medic:
-  - Inside `resource\ui\TargetID.res`, find `TargetNameLabel` and change: `"font" "surface11"` to `"font" "redacted8"`
+  - Inside `resource\ui\TargetID.res`, find `TargetNameLabel` and change: `"font" "surface11"` to `"font" "redacted"`
 - Hide usernames from spy disguising:
-  - Inside `resource\ui\DisguiseStatusPanel.res`, find `DisguiseNameLabel` and change: `"font" "surface11"` to `"font" "redacted8"`
+  - Inside `resource\ui\DisguiseStatusPanel.res`, find `DisguiseNameLabel` and change: `"font" "surface11"` to `"font" "redacted"`
 - Note that changing the above values does not hide player names from textchat/voicechat, so it is recommended to use "commstoggle" with this mode, which toggles on/off both text and voice chat when key pressed. Bound to "\\" (backslash key) by default. Or alternatively open console and type "commstoggle"
 - You can optionally hide player's Casual Rank (the icon) from the Tab Scoreboard. Admittedly this is pretty pointless to do, but if you're looking to hide that metric of skill level, then change the following:
   - Inside `resource\ui\ScoreBoard.res`, find `scores` and change: `"medal_width" "28"` and `"medal_column_width" "21"` to `"medal_width" "0"` and `"medal_column_width" "0"` respectively
