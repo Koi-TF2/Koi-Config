@@ -12,7 +12,7 @@ _____________
 
 ### Download: https://github.com/Koi-TF2/Koi-Config/archive/refs/heads/Release.zip
 
-#### Current version: 6.8.1 (Feb 19th, 2025)
+#### Current version: 6.8.2 (June 8th, 2025)
 
 _____________
 
@@ -60,9 +60,8 @@ _____________
   - By default, Streamer HUD mode is disabled since the `"_default_hud_show_names_"` is active when installing the HUD.
   - To enable the Streamer HUD, you need to go into the `"_stream_hud_hide_names_"` folder and drag the corresponding "resource" and "scripts" folders into your custom HUD install.
   - If you are in-game when you enable the Stream HUD, you will need to tell the game to reload your current HUD so that it uses the new "resource" and "scripts" folders.
-    - To do this, you will need to type the command `hud_reloadscheme` into console.
-    - In addition, you will want to type `cl_hud_killstreak_display_time 0` to prevent killstreak banner notifications, and `tf_spec_xray_disable 1` to disable the playernames showing on spectator camera. Note that both of these commands are stored inside `koi_cfg\hud+ui.cfg` which means the values will be remembered from this location. To launch the game directly into Streamer mode, set them in that file first.
-  - To disable Streamer mode, simply do the same steps as above but instead drag in the contents of `"_default_hud_show_names_"`, if in-game run `hud_reloadscheme`, and then set `cl_hud_killstreak_display_time 3` and `tf_spec_xray_disable 0` (both stored in `koi_cfg\hud+ui.cfg` by default for game launch).
+    - To do this, you will need to type the command `hidenames` (or hide_names) into console. This is an alias which does the following: reloads the HUD with `hud_reloadscheme`, and then sets `cl_hud_killstreak_display_time 0` to prevent killstreak banner notifications, and `tf_spec_xray_disable 1` to disable the playernames showing on spectator camera (note that `cl_hud_killstreak_display_time` and `tf_spec_xray_disable` are stored in `koi_cfg\hud+ui.cfg` by default, used on game launch).
+  - To disable Streamer mode, simply do the same steps as above, but instead drag in the contents of `"_default_hud_show_names_"`, and then type the command `shownames` (or show_names) in console to reload the HUD and set the proper values back to normal.
   - I also suggest checking out the No Hats mod found here: https://pevhs.ch/tf2/vpk/nhbgum/
     - "no_hats_bgum.vpk" is the primary mod that removes cosmetics and works on every server including valve/pure servers. Place the .vpk into `Team Fortress 2\tf\custom`
     - "no_unusuals.vpk" does not work on valve/pure servers, but could still be useful for streamers. Side node, it does not remove the Pro KS Eye-Effect Particles. This mod is not upkept to the same degree as the primary no_hats_bgum.vpk
