@@ -27,14 +27,14 @@ _____________
    - Under the "General" tab, you will see a "Set Launch Options" area
    - Paste in the line of launch options seen below into that area, and then click OK
  - #### Fullscreen 16:9 @ 1920x1080 240hz: 
-`-dxlevel 95 -full -w 1920 -h 1080 -freq 240 -novid -nojoy -nosteamcontroller -nohltv -noquicktime -precachefontchars -useforcedmparms -noforcemaccel -noforcemspd -no_texture_stream`
+`+mat_dxlevel 100 -full -w 1920 -h 1080 -freq 240 -novid -nojoy -nosteamcontroller -nohltv -noquicktime -precachefontchars -useforcedmparms -noforcemaccel -noforcemspd -no_texture_stream`
  - #### Fullscreen 4:3 @ 1440x1080 240hz: 
-`-dxlevel 95 -full -w 1440 -h 1080 -freq 240 -novid -nojoy -nosteamcontroller -nohltv -noquicktime -precachefontchars -useforcedmparms -noforcemaccel -noforcemspd -no_texture_stream`
+`+mat_dxlevel 100 -full -w 1440 -h 1080 -freq 240 -novid -nojoy -nosteamcontroller -nohltv -noquicktime -precachefontchars -useforcedmparms -noforcemaccel -noforcemspd -no_texture_stream`
 - For 4:3 Stretched support, make the following adjustments:
   - Inside of NVidia Control Panel, locate: `Display -> "Adjust desktop size and position" -> Choose your primary monitor -> "Apply the following settings:" for "Scaling" -> Full-screen`. Depending on the PC being used, you may also need to tick the `"Override the scaling mode set by games and programs"` box in the same section.
   - Recommended but optional: Inside `koi_cfg\mouse+sens.cfg`, change the "m_yaw" cvar from `m_yaw 0.022` to `m_yaw 0.0165`. This ensures that the horizontal sensitivity matches with the vertical sensitivity when display is stretched.
  - #### Windowed Borderless 16:9 @ 1920x1080 240hz (Much better alt+tab support): 
-`-dxlevel 95 -sw -w 1920 -h 1080 -noborder -freq 240 -novid -nojoy -nosteamcontroller -nohltv -noquicktime -precachefontchars -useforcedmparms -noforcemaccel -noforcemspd -no_texture_stream`
+`+mat_dxlevel 100 -sw -w 1920 -h 1080 -noborder -freq 240 -novid -nojoy -nosteamcontroller -nohltv -noquicktime -precachefontchars -useforcedmparms -noforcemaccel -noforcemspd -no_texture_stream`
   
 
 
@@ -107,3 +107,4 @@ _____________
 9. Note 2: Known issue - When playing back a demo recording that has recorded the Valve Casual/Valve Comp end-of-match final scoreboard screen, the demo playback will crash the game at that screen's tick. This is regardless of having ds_screens set to 0 or 1. This is a very hyper-specific and complicated issue. It may have to do with custom HUD, although it could be something to do with TF2 on 64-bit, or some other niche problem related to config. Given that this issue does not inhibit the ability to view the contents of demo files, it does not really matter. The only notable downside is ds_screens currently failing to take end-of-game scoreboard screenshots on Valve Casual/Valve Comp servers, even when set to 1.
 
 10. Note 3: Sometime in 2021 RGL made any "oversized heal particles" illegal. Because of this ban, I have created a custom rule-friendly overheal particle which turns the default stock overheal particles bright green for higher visibility. They are completely stock and not oversized, only the color has been changed for better visibility. This rule-friendly particle file is used by default with this config. Please note that I have still included the previous large overheal particles in this config in a backup folder located here `koi_custom\particles\BACKUP\` in case anyone wants to use them. As a reminder: if you do choose to use the oversized particles in RGL, I am not responsible for issues you may run into with the admins - this is your warning. If RGL decides to allow the large particles again then I will remove this note from this readme and make the large particles default again.
+
