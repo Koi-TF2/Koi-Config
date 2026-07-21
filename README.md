@@ -94,11 +94,12 @@ Here is a technical breakdown of each specific part of the Streamer HUD, in case
 - Hide "\<playername\> is on a killstreak" popup notifications:
   - Use "cl_hud_killstreak_display_time 0". The cl_hud_killstreak_display_time cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 3 seconds)
 - Hide teammate usernames from the respawn spectate camera xray (the playername above every teammates head through walls during respawn spec cam):
-  - Use "tf_spec_xray_disable 1". The tf_spec_xray_disable cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 0 to allow teammate names)
+  - Option 1 - easier: Use "tf_spec_xray_disable 1". The tf_spec_xray_disable cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 0 to allow teammate xray when dead/in spec)
+  - Option 2: Keep "tf_spec_xray_disable 0" and instead disable via HUD by navigating to `scripts\Hudlayout.res`, find `HudSpectatorExtras` and add in this extra line to that block: `"player_name_font" "redacted"`. Doing so will keep spectator outlines enabled but redact the player names, which some people may find helpful or prefer
 
 _____________
 
-7. Optional: Using the custom sprays found within the "Sprays" zip. These can be installed by placing any of the "vgui" folders (1 for each spray) directly into `Steam\steamapps\common\Team Fortress 2\tf\materials` and **NOT** into the "koi_custom" folder's material section (sprays are not meant to be placed into the custom folder). Please note that within `koi_cfg\sprays.cfg`, the variable `cl_logofile "materials/vgui/logos/spray.vtf"` has been pre-set. What this means is only 1 spray named "spray.vtf" can be used at a time. Using multiple sprays and changing between them therefore does not work (unless spray file is renamed or config is changed).
+7. Optional: Using the custom sprays found within the "Sprays" zip. These can be installed by placing any of the "vgui" folders (1 for each spray) directly into `Steam\steamapps\common\Team Fortress 2\tf\materials` and **NOT** into the "koi_custom" folder's material section (sprays are not meant to be placed into the custom folder). Please note that within `koi_cfg\sprays.cfg`, the variable `cl_logofile "materials/vgui/logos/spray.vtf"` has been pre-set. What this means is only 1 spray named "spray.vtf" can be used at a time. Using multiple sprays and changing between them therefore does not work (unless spray file is renamed or config is changed)
 
 _____________
 
