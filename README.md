@@ -54,14 +54,14 @@ _____________
 
 _____________
 
-6. Optional: Install "Streamer" Mode (Hide usernames) **with Broesel Hud**:
+6. Optional: Install "Streamer" Mode **with Broesel Hud**:
   - Inside of the "Broesel Hud Customizations" folder provided in the HUD zip from this repo is a "Stream HUD" customization marked as number 6.
   - In this customization, you will find two folders labeled `"_default_hud_show_names_"` and `"_stream_hud_hide_names_"`.
   - By default, Streamer HUD mode is disabled since the `"_default_hud_show_names_"` is active when installing the HUD.
   - To enable the Streamer HUD, you need to go into the `"_stream_hud_hide_names_"` folder and drag the corresponding "resource" and "scripts" folders into your custom HUD install.
   - If you are in-game when you enable the Stream HUD, you will need to tell the game to reload your current HUD so that it uses the new "resource" and "scripts" folders.
-    - To do this, you will need to type the command `hidenames` (or hide_names) into console. This is an alias which does the following: reloads the HUD with `hud_reloadscheme`, and then sets `cl_hud_killstreak_display_time 0` to prevent killstreak banner notifications, and `tf_spec_xray_disable 1` to disable the playernames showing on spectator camera (note that `cl_hud_killstreak_display_time` and `tf_spec_xray_disable` are stored in `koi_cfg\hud+ui.cfg` by default, used on game launch).
-  - To disable Streamer mode, simply do the same steps as above, but instead drag in the contents of `"_default_hud_show_names_"`, and then type the command `shownames` (or show_names) in console to reload the HUD and set the proper values back to normal (don't forget about `koi_cfg\hud+ui.cfg` since the values of `cl_hud_killstreak_display_time` and `tf_spec_xray_disable` are remembered from that location on game launch).
+    - To do this, you will need to type the command `stream` (or streamon, stream_on, enablestream, enable_stream, etc) into console. This is an alias which does the following: reloads the HUD with `hud_reloadscheme`, and then sets `cl_hud_killstreak_display_time 0` to prevent killstreak banner notifications, `tf_spec_xray_disable 1` to disable the playernames showing on spectator camera, `tf_hide_custom_decals 1` to disable player-created decals on objectors and other items, `cl_spraydisable 1` to disable seeing player sprays in community servers, and `cl_notifications_show_ingame 0` to prevent malicious trade and duel request popups while streaming.
+  - To disable Streamer mode, simply do the same steps as above, but instead drag in the contents of `"_default_hud_show_names_"`, and then type the command `streamoff` (or stream_off, disablestream, disable_stream, etc) in console to reload the HUD and set the proper values back to normal.
   - I also suggest checking out the No Hats mod found here: https://pevhs.ch/tf2/vpk/nhbgum/
     - "no_hats_bgum.vpk" is the primary mod that removes cosmetics and works on every server including valve/pure servers. Place the .vpk into `Team Fortress 2\tf\custom`
     - "no_unusuals.vpk" does not work on valve/pure servers, but could still be useful for streamers. Side node, it does not remove the Pro KS Eye-Effect Particles. This mod is not upkept to the same degree as the primary no_hats_bgum.vpk
@@ -92,10 +92,14 @@ Here is a technical breakdown of each specific part of the Streamer HUD, in case
   - Inside `resource\ui\ScoreBoard.res`, find `scores` and change: `"medal_width" "28"` and `"medal_column_width" "21"` to `"medal_width" "0"` and `"medal_column_width" "0"` respectively
   - Note that if you are using the scoreboard name-blocker bars, you may also need to manually adjust the bars slightly to the left to compensate for the removal of the medal column (subtract 32 from `"xpos"` but add 32 to `"wide"` on both red and blu blocker bars at bottom of scoreboard file)
 - Hide "\<playername\> is on a killstreak" popup notifications:
-  - Use "cl_hud_killstreak_display_time 0". The cl_hud_killstreak_display_time cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 3 seconds)
+  - Use "cl_hud_killstreak_display_time 0" (Note: by default it is set to 3, for 3 second popups)
 - Hide teammate usernames from the respawn spectate camera xray (the playername above every teammates head through walls during respawn spec cam):
-  - Option 1 - easier: Use "tf_spec_xray_disable 1". The tf_spec_xray_disable cvar can be found in `koi_cfg\hud+ui.cfg` at the top of the file (by default it is set to 0 to allow teammate xray when dead/in spec)
+  - Option 1 - easier: Use "tf_spec_xray_disable 1"
   - Option 2: Keep "tf_spec_xray_disable 0" and instead disable via HUD by navigating to `scripts\Hudlayout.res`, find `HudSpectatorExtras` and add in this extra line to that block: `"player_name_font" "redacted"`. Doing so will keep spectator outlines enabled but redact the player names, which some people may find helpful or prefer
+- Hide custom decals (Objector) and sprays:
+  - Use "tf_hide_custom_decals 1" and "cl_spraydisable 1"
+- Hide popup messages including trade requests and duel requests:
+  - Use "cl_notifications_show_ingame 0"
 
 _____________
 
