@@ -1,0 +1,51 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/player/items/crafting/stat_clock"
+	"$basemapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongboost" ".1"
+	"$phongexponent" "5"
+	"$lightwarptexture" "models\buildables\sentry1\Sentry1_lightwarp"
+	"$phongfresnelranges"	"[.5 1.5 10]"
+	
+	"$rimlight" "1"		
+	"$rimlightexponent" "4"				
+	"$rimlightboost" ".25"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"$yellow" "0"
+	"$glowcolor" "1"
+
+	"Proxies"
+	{
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}
