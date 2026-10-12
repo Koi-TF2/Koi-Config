@@ -80,6 +80,7 @@ Here is a technical breakdown of each specific part of the Streamer HUD, in case
   - For respawn automatic spectate cam inspect: Locate `resource\ui\Spectator.res`, find `itempanel` -> `ItemLabel` and change: `"ypos" "3"` to `"ypos" "9999"`
 - Hide usernames from the scoreboard (tab) and spectator list:
   - Inside `resource\ui\ScoreBoard.res`, go to the very bottom of the file and uncomment the large commented-out section (remove the // characters). Uncommenting this section will add big rectangular blocker bars on top of the player names in your scoreboard
+  - You can optionally hide player's Casual Rank (the icon) from the Tab Scoreboard by setting `"medal_width" "0"` and `"medal_column_width" "0"` in this file. The streamer mode has this set by default.
 - Hide usernames from the end-of-round MVP top score and top killstreak popup:
   - Inside `resource\ui\WinPanel.res`, find all four of the following: `Player1Name` `Player2Name` `Player3Name` `KillStreakPlayer1Name`, and change: `"font" "surface10"` to `"font" "redacted"` for all four
 - Hide usernames from the casual pre-game round start and post-game stats screens:
@@ -88,13 +89,10 @@ Here is a technical breakdown of each specific part of the Streamer HUD, in case
 - Hide usernames from mouse-over/medic:
   - Inside `resource\ui\TargetID.res`, find `TargetNameLabel` and change: `"font" "surface11"` to `"font" "redacted"`
 - Hide malicious medigun weapon names used by teammates:
-  - Inside of the game's default localization file (**not a custom file**) here: `...Team Fortress 2\tf\resource\tf_english.txt`, search for the line `"TF_playerid_mediccharge_wpn"` and modify the text to remove the `(%s2)` portion of the line. Doing so will remove the medigun's name but still keep the charge percentage visible. On rare occasion this can result in confusion between Kritz charge VS Uber charge although this is typically a non-issue.
+  - Inside of the game's default localization file (**not a custom file**) here: `...Team Fortress 2\tf\resource\tf_english.txt`, search for the line `"TF_playerid_mediccharge_wpn"` and modify the text to remove the `(%s2)` portion of the line. Doing so will remove the medigun's name but still keep the charge percentage visible. On rare occasion this can result in confusion between Kritz charge VS Uber charge although this is typically a non-issue. Please note that the tf_english file gets updated very frequently. Every time the file updates, this change will reset itself. This means that it needs to be changed constantly - so be aware of that.
 - Hide usernames from spy disguising:
   - Inside `resource\ui\DisguiseStatusPanel.res`, find `DisguiseNameLabel` and change: `"font" "surface11"` to `"font" "redacted"`
 - Note that changing the above values does not hide player names from textchat/voicechat, so it is recommended to use "commstoggle" with this mode, which toggles on/off both text and voice chat when key pressed. Bound to "\\" (backslash key) by default. Or alternatively open console and type "commstoggle"
-- You can optionally hide player's Casual Rank (the icon) from the Tab Scoreboard. Admittedly this is pretty pointless to do, but if you're looking to hide that metric of skill level, then change the following:
-  - Inside `resource\ui\ScoreBoard.res`, find `scores` and change: `"medal_width" "28"` and `"medal_column_width" "21"` to `"medal_width" "0"` and `"medal_column_width" "0"` respectively
-  - Note that if you are using the scoreboard name-blocker bars, you may also need to manually adjust the bars slightly to the left to compensate for the removal of the medal column (subtract 32 from `"xpos"` but add 32 to `"wide"` on both red and blu blocker bars at bottom of scoreboard file)
 - Hide "\<playername\> is on a killstreak" popup notifications:
   - Use "cl_hud_killstreak_display_time 0" (Note: by default it is set to 3, for 3 second popups)
 - Hide teammate usernames from the respawn spectate camera xray (the playername above every teammates head through walls during respawn spec cam):
