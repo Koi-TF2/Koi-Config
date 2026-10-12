@@ -12,7 +12,7 @@ _____________
 
 ### Download: https://github.com/Koi-TF2/Koi-Config/archive/refs/heads/Release.zip
 
-#### Current version: 6.8.2 (June 8th, 2025)
+#### Current version: 6.8.3 (Oct 12, 2026)
 
 _____________
 
@@ -60,7 +60,7 @@ _____________
   - By default, Streamer HUD mode is disabled since the `"_default_hud_show_names_"` is active when installing the HUD.
   - To enable the Streamer HUD, you need to go into the `"_stream_hud_hide_names_"` folder and drag the corresponding "resource" and "scripts" folders into your custom HUD install.
   - If you are in-game when you enable the Stream HUD, you will need to tell the game to reload your current HUD so that it uses the new "resource" and "scripts" folders.
-    - To do this, you will need to type the command `stream` (or streamon, stream_on, enablestream, enable_stream, etc) into console. This is an alias which does the following: reloads the HUD with `hud_reloadscheme`, and then sets `cl_hud_killstreak_display_time 0` to prevent killstreak banner notifications, `tf_spec_xray_disable 1` to disable the playernames showing on spectator camera, `tf_hide_custom_decals 1` to disable player-created decals on objectors and other items, `cl_spraydisable 1` to disable seeing player sprays in community servers, and `cl_notifications_show_ingame 0` to prevent malicious trade and duel request popups while streaming.
+    - To do this, you will need to type the command `stream` (or streamon, stream_on, enablestream, enable_stream, etc) into console. This is an alias which does the following: reloads the HUD with `hud_reloadscheme`, and then sets `cl_hud_killstreak_display_time 0` to prevent killstreak banner notifications, `tf_hide_custom_decals 1` to disable player-created decals on objectors and other items, `cl_spraydisable 1` to disable seeing player sprays in community servers, and `cl_notifications_show_ingame 0` to prevent malicious trade and duel request popups while streaming.
   - Additional recommended manual step: Hide malicious medigun weapon names used by teammates.
     - To do this, find the game's default localization file (**not a custom file**) here: `...Team Fortress 2\tf\resource\tf_english.txt`, search for the line `"TF_playerid_mediccharge_wpn"` and modify the text to remove the `(%s2)` portion of the line. Doing so will remove the medigun's name but still keep the charge percentage visible. On rare occasion this can result in confusion between Kritz charge VS Uber charge although this is typically a non-issue.
   - To disable Streamer mode, simply do the same steps as above, but instead drag in the contents of `"_default_hud_show_names_"`, and then type the command `streamoff` (or stream_off, disablestream, disable_stream, etc) in console to reload the HUD and set the proper values back to normal.
@@ -98,8 +98,8 @@ Here is a technical breakdown of each specific part of the Streamer HUD, in case
 - Hide "\<playername\> is on a killstreak" popup notifications:
   - Use "cl_hud_killstreak_display_time 0" (Note: by default it is set to 3, for 3 second popups)
 - Hide teammate usernames from the respawn spectate camera xray (the playername above every teammates head through walls during respawn spec cam):
-  - Option 1 - easier: Use "tf_spec_xray_disable 1"
-  - Option 2: Keep "tf_spec_xray_disable 0" and instead disable via HUD by navigating to `scripts\Hudlayout.res`, find `HudSpectatorExtras` and add in this extra line to that block: `"player_name_font" "redacted"`. Doing so will keep spectator outlines enabled but redact the player names, which some people may find helpful or prefer
+  - Option 1: Keep "tf_spec_xray_disable 0" and instead disable via HUD by navigating to `scripts\Hudlayout.res`, find `HudSpectatorExtras` and add in this extra line to that block: `"player_name_font" "redacted"`. Doing so will keep spectator outlines enabled but redact the player names, which some people may find helpful/prefer
+  - Option 2: Use "tf_spec_xray_disable 1" instead, which will also disable outlines when spectating
 - Hide custom decals (Objector) and sprays:
   - Use "tf_hide_custom_decals 1" and "cl_spraydisable 1"
 - Hide popup messages including trade requests and duel requests:
